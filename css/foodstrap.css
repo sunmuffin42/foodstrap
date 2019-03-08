@@ -1,0 +1,52 @@
+body * {
+    display: flex;
+}
+body {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+header > a > h1 {
+    color: black;
+}
+
+nav {
+    flex-direction: row;
+}
+
+nav > a {
+    padding: 10px;
+    background-color: rgb(85, 127, 151);
+    text-decoration: none;
+    color: black;
+    width: 14vw;
+}
+
+main {
+    display: inherit;
+    flex-direction: column;
+}
+
+main > * {
+    height: 20vh;
+    flex: 1;
+}
+
+#author1 {
+    flex-direction: row-reverse;
+}
+
+#author2 {
+    flex-direction: row;
+}
+
+h1 {
+    color: rgb(60, 115, 141);
+    background-color: rgb(85, 127, 151);
+}
