@@ -53,21 +53,19 @@ header a {
     flex-direction: column;
     width: 70%;
     justify-content: center;
-    background-color: pink;
+    background-color: #b0dddd;
 }
 
 main {
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 100%;
-    background-color: beige;
 }
 
 .author {
     width: auto;
-    height: 200px;
-    background-color: aqua;
+    height: 300px;
 }
 
 .author > img {
@@ -83,12 +81,47 @@ footer {
     margin-top: 40px;
 }
 
-#meet_authors {
+article {
     flex-direction: column;
 }
 
+#author {
+    flex-direction: row;
+}
+
 #author2 {
-    flex-direction: row-reverse;
+    width: 90%;
+    margin-left: 250px;
+}
+
+#author2 > p {
+    width: 300px;
+}
+
+#author1 > p {
+    width: 300px;
+}
+
+#author2 > .author_blurb {
+    margin-right: -100px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#author1 > .author_blurb {
+    margin-left: -200px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+p {
+    display: inline;
+}
+
+hr {
+    border: 2px black solid;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 a.redirect {
@@ -100,5 +133,20 @@ a.redirect {
     font-family: "Times New Roman" , serif;
     font-weight: bolder;
     justify-content: center;
-    
+}
+
+#desc {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#author2_pic {
+    margin-bottom: 20px;
+    margin-left: -50px;
+}
+
+#author1_pic {
+    margin-left: -50px;
 }
