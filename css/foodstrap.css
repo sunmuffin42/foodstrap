@@ -3,58 +3,102 @@ body * {
 }
 body {
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    justify-content: center;
+    background-color: #28867e;
+    font-family: sans-serif;
+    overflow: auto;    
 }
 
 header {
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    background-color: aqua;
-}
-
-header > a {
-    text-decoration: none;
-}
-
-header > a > h1 {
-    color: black;
+    background-color: #90c4c4;
 }
 
 nav {
     flex-direction: row;
+    justify-content: center;
+    border: 1px black solid;
+    background-color: rgb(41, 95, 91);
 }
 
-nav > a {
-    padding: 10px;
-    background-color: rgb(85, 127, 151);
+.navlink {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 3px black solid;
+    color: white;
+    background-color: rgb(41, 95, 91);
+    font-family: sans-serif;
+    font-size: 110%;
+}
+
+.navlink:hover {
+    border-radius: 15%;
+    background-color: rgb(58, 133, 128);
+}
+
+a {
     text-decoration: none;
-    color: black;
-    width: 14vw;
+    color: black
+}
+
+header a {
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 230%;
+    height: 200px;
+}
+
+.container {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    background-color: pink;
 }
 
 main {
-    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: beige;
+}
+
+.author {
+    width: auto;
+    height: 200px;
+    background-color: aqua;
+}
+
+.author > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer {
+    justify-content: center;
+    padding: 20px;
+    background-color: grey;
+    margin-top: 40px;
+}
+
+#meet_authors {
     flex-direction: column;
 }
 
-main > * {
-    flex: 1;
-}
-
-#author1 {
+#author2 {
     flex-direction: row-reverse;
 }
 
-#author2 {
-    flex-direction: row;
+a.redirect {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: "Times New Roman" , serif;
+    font-weight: bolder;
+    justify-content: center;
+    
 }
-
-h1 {
-    color: rgb(60, 115, 141);
-    background-color: rgb(85, 127, 151);
-}
-
-
