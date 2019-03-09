@@ -8,6 +8,13 @@ body {
     overflow: hidden;
 }
 
+header {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
 header > a {
     text-decoration: none;
 }
@@ -34,7 +41,6 @@ main {
 }
 
 main > * {
-    height: 20vh;
     flex: 1;
 }
 
@@ -50,3 +56,5 @@ h1 {
     color: rgb(60, 115, 141);
     background-color: rgb(85, 127, 151);
 }
+
+
