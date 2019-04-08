@@ -18,9 +18,24 @@
         <a href="./contact.html" class="navlink" id="link4">Contact Us</a>
     </nav>
 
-    <div class = "return">
-            <a class = "redirect" href = "./foodstrap.html"><h1> Click here to return to the homepage!</h1></a>
-    </div>
+    <form id="contact_form" action="" method="post">
+        <div class="form_area" id="name_area">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form_area" id="email_area">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form_area" id="comment_area">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="50" rows="10" required></textarea>
+        </div>
+        <div class="form_area" id="submission">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
 </body>
 </html>
     

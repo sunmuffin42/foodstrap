@@ -150,3 +150,8 @@ a.redirect {
 #author1_pic {
     margin-left: -50px;
 }
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+}
