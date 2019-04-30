@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Food Facts</title>
+	<meta charset="utf-8">
+	<link rel = 'stylesheet' type = 'text/css' href = './foodstrap.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+	<script type="text/javascript" src ="./foodfacts.js"></script>
+</head>
+<body>
+	<header>
+        <a href="./foodstrap.html">
+            <h1>Foodstrap</h1>
+        </a>
+    </header>
+    <nav>
+        <a href="./browse.html" class="navlink" id="link1">Browse Recipes</a>
+        <a href="./submit.html" class="navlink" id="link2">Submit Recipes</a>
+        <a href="./login.html" class="navlink" id="link3">Log in</a>
+        <a href="./contact.html" class="navlink" id="link4">Contact Us</a>
+    </nav>
+	<div class = "row">
+		<div class = "col">
+			<span onmouseover = "facts(1)" onmouseout = "facts(0)"><img src="./protein.jpg" alt = "Protein"></span>
+		</div>
+		<div class = "col">
+			<img src="./potassium.jpg" alt = "potassium" onmouseover = "facts(2)" onmouseout = "facts(0)">
+		</div>
+		<div class = "col">
+			<img src="./meats.jpg" alt = "Meats" onmouseover = "facts(3)" onmouseout = "facts(0)">
+		</div>
+		<div class = "col">
+			<img src="./alcohol.jpg" alt = "Alcohol" onmouseover = "facts(4)" onmouseout = "facts(0)">
+		</div>
+	</div>
+	<div class = "row justify-content-center">
+		<div>
+			<textarea  id = "facts" rows = "5" cols ="50">Mouse Over any picture to learn a fact!</textarea>
+		</div>
+	</div>
+	<div class ="row">
+		<div class = "col">
+			<img src="./iron.jpg" alt= "Iron" onmouseover = "facts(5)" onmouseout = "facts(0)">
+		</div>
+		<div class = "col">
+			<img src="./chocolate.jpg" alt = "chocolate" onmouseover = "facts(6)" onmouseout = "facts(0)">
+		</div>
+		<div class = "col">
+			<img src="./salt.jpg" alt = "salt" onmouseover = "facts(7)" onmouseout = "facts(0)">
+		</div>
+		<div class = "col">
+			<img src="./fast.jpg" alt = "Fast Food" onmouseover = "facts(8)" onmouseout = "facts(0)">
+		</div>
+	</div>
+
+</body>
+</html>

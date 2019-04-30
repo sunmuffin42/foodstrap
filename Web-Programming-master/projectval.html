@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<title> Profile Validation </title>
+<script type ="text/javascript" src = "./val.js"></script>
+<link rel="stylesheet" type="text/css" href="">
+</head>
+
+<body>
+<h1> Username Form</h1>
+<form id = "textForm" method = "post"
+ onsubmit = "return validate();" >
+<table >
+<tr>
+<td> <p>Username: </p> </td>
+<td> <input type = "text" name = "userName" /></td>
+</tr>
+<tr>
+<td> <p>Email: </p> </td>
+<td> <input type = "text" name = "eMail" /></td>
+</tr>
+<tr>
+<td><p> Password: </p></td>
+<td> <input type = "text" name = "pswd" /></td>
+</tr>
+<tr>
+<td> <p>Repeat Password: </p> </td>
+<td> <input type = "text" name = "repeat" /></td>
+</tr>
+<tr>
+<td> <input type = "submit" value = "Enter" /></td>
+<td> <input type = "reset" value = "Clear" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
