@@ -10,7 +10,7 @@
 <body>
 <h1> Username Form</h1>
 <form id = "textForm" method = "post"
- onsubmit = "return validate();" >
+ onsubmit = "return validate();" action="registration.php">
 <table >
 <tr>
 <td> <p>Username: </p> </td>
@@ -18,15 +18,15 @@
 </tr>
 <tr>
 <td> <p>Email: </p> </td>
-<td> <input type = "text" name = "eMail" /></td>
+<td> <input type = "email" name = "eMail" /></td>
 </tr>
 <tr>
 <td><p> Password: </p></td>
-<td> <input type = "text" name = "pswd" /></td>
+<td> <input type = "password" name = "pswd" /></td>
 </tr>
 <tr>
 <td> <p>Repeat Password: </p> </td>
-<td> <input type = "text" name = "repeat" /></td>
+<td> <input type = "password" name = "repeat" /></td>
 </tr>
 <tr>
 <td> <input type = "submit" value = "Enter" /></td>
