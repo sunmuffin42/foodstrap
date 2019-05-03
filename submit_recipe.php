@@ -31,7 +31,7 @@ if (isset($_SESSION['user'])) {
 INIT;
 }
 else {
-    if (!isset($_POST["name"])) {
+    if (!isset($_POST["dish"])) {
         print <<<INIT
         <!DOCTYPE HTML>
         <html>
