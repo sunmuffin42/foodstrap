@@ -42,10 +42,11 @@ print <<<INIT
         </a>
     </header>
     <nav>
-        <a href="./browse.html" class="navlink" id="link1">Browse Recipes</a>
-        <a href="./submit.html" class="navlink" id="link2">Submit Recipes</a>
-        <a href="./login.html" class="navlink" id="link3">Log in</a>
-        <a href="./contact.html" class="navlink" id="link4">Contact Us</a>
+    <a href="./browse_recipes.php" class="navlink" id="link1">Browse Recipes</a>
+    <a href="./submit_recipe.php" class="navlink" id="link2">Submit Recipes</a>
+    <a href="./registration.php" class="navlink" id="link3">Log in</a>
+    <a href="./foodfacts.html" class="navlink" id="link3">Advice</a>	
+    <a href="./contact.php" class="navlink" id="link4">Contact Us</a>
     </nav>
     <p>$response</p>
 </body>
@@ -73,10 +74,11 @@ else {
         </a>
     </header>
     <nav>
-        <a href="./browse.html" class="navlink" id="link1">Browse Recipes</a>
-        <a href="./submit.html" class="navlink" id="link2">Submit Recipes</a>
-        <a href="./login.html" class="navlink" id="link3">Log in</a>
-        <a href="./contact.html" class="navlink" id="link4">Contact Us</a>
+    <a href="./browse_recipes.php" class="navlink" id="link1">Browse Recipes</a>
+    <a href="./submit_recipe.php" class="navlink" id="link2">Submit Recipes</a>
+    <a href="./registration.php" class="navlink" id="link3">Log in</a>
+    <a href="./foodfacts.html" class="navlink" id="link3">Advice</a>	
+    <a href="./contact.php" class="navlink" id="link4">Contact Us</a>
     </nav>
     <p>$response</p>
 </body>

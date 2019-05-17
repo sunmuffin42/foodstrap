@@ -40,7 +40,7 @@ else {
 	<table >
 <tr>
 <td> <p>Username: </p> </td>
-<td> <input type = "text" name = "userName" onchange="validateu();callServer();" id="userName" /></td>
+<td> <input type = "text" name = "userName" onchange="validateu();console.log('poop');callServer();console.log('shit');" id="userName" /></td>
 </tr>
 <tr>
 <td> <p>Email: </p> </td>
@@ -48,14 +48,14 @@ else {
 </tr>
 <tr>
 <td><p id="pass"> Password: </p></td>
-<td> <input type = "password" name = "pswd" id="pswd" onchange="validate();"/></td>
+<td> <input type = "password" name = "pswd" id="pswd" onchange="validatep();"/></td>
 </tr>
 <tr>
 <td> <p>Repeat Password: </p> </td>
-<td> <input type = "password" name = "repeat" onchange="validate();encryptpass();encryptrep();" id="repeat"/></td>
+<td> <input type = "password" name = "repeat" onchange="validater();bigVal();encryptpass();encryptrep();" id="repeat"/></td>
 </tr>
 <tr>
-<td> <input type = "submit" value = "Enter" id="submit" /></td>
+<td> <input type = "submit" value = "Enter" id="submit" disabled/></td>
 <td> <input type = "reset" value = "Clear" /></td>
 </tr>
 </table>
@@ -78,7 +78,6 @@ print <<<INIT
         <meta charset="utf-8">
         <link rel = 'stylesheet' type = 'text/css' href = './foodstrap.css'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-        <script type="text/javascript" src ="./foodfacts.js"></script>
 </head>
 <body>
         <header>
@@ -96,7 +95,7 @@ print <<<INIT
         <a href="./destroy.php" class="navlink" id="link7">Log out</a>
     </nav>
     <p>$response</p>
-<script type="text/javascript" src ="./projectval.js"></script>
+<script type="text/javascript" src ="./registration.js"></script>
 <script type="text/javascript" src ="./signup2.js"></script>
 </body>
 </html>
