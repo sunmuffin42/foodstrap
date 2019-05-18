@@ -21,8 +21,9 @@ function callServer(){
 function updatePage(){
     if ((xhr.readyState == 4) && (xhr.status == 200)){
         var response = xhr.responseText;
+	    console.log(response);
         if (response != ""){
-        	window.alert(repsonse);
+        	window.alert(response);
 		document.getElementById("submit").disabled = true;
         }
     }

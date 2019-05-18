@@ -41,7 +41,7 @@ else {
         <meta charset="utf-8">
         <link rel = 'stylesheet' type = 'text/css' href = './foodstrap.css'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-        <script type="text/javascript" src ="./foodfacts.js"></script>
+        <script type="text/javascript" src ="./submit_recipe.js"></script>
 </head>
 <body>
         <header>
@@ -59,19 +59,19 @@ else {
         <a href="./destroy.php" class="navlink" id="link7">Log out</a>
     </nav>
             <form action='submit_recipe.php' method='post' id='submit'>
-            <p>Dish name (no apostrophes or special characters): <input type="text" size="30" name="dish"></p>
-            <div>Ingredients: 
+            <p>Dish name (no apostrophes or special characters, max 30 chars): <input type="text" id="dish" size="30" name="dish" onchange="specialChar();"></p>
+            <div>Ingredients (max 40 chars): 
             <ul>
-            <li><input type="text" placeholder="2 tblsp peanut butter" name="ingr1"></li>
-            <li><input type="text" placeholder="1 cup jasmine rice" name="ingr2"></li>
-            <li><input type="text" placeholder="10 oz white flour" name="ingr3"></li>
-            <li><input type="text" placeholder="1 quart coffee grounds" name="ingr4"></li>
-            <li><input type="text" placeholder="goldfish, to taste" name="ingr5"></li>
+            <li><input type="text" placeholder="2 tblsp peanut butter" name="ingr1" id="ingr1" maxlength="40" onchange="specialChar();"></li>
+            <li><input type="text" placeholder="1 cup jasmine rice" name="ingr2" id="ingr2" maxlength="40" onchange="specialChar();"></li>
+            <li><input type="text" placeholder="10 oz white flour" name="ingr3" id="ingr3" maxlength="40" onchange="specialChar();"></li>
+            <li><input type="text" placeholder="1 quart coffee grounds" id="ingr4" name="ingr4" maxlength="40" onchange="specialChar();"></li>
+            <li><input type="text" placeholder="goldfish, to taste" id="ingr5" name="ingr5" maxlength="40" onchange="specialChar();"></li>
             </ul>
             </div>
-            <p>Recipe (please separate steps with new lines, and do not use subsections):</p>
-            <p><textarea name="recipe"></textarea></p>
-            <p><input type="submit"></p>
+            <p>Recipe (please separate steps with new lines, and do not use subsections, max 2000 chars):</p>
+            <p><textarea name="recipe" maxlength="2000" id="recipe" cols="100" rows="12" onchange="specialChar();"></textarea></p>
+            <p><input type="submit" disabled></p>
             </form>
         </body>
         </html>

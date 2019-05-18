@@ -1,25 +1,21 @@
 <?php
-
+$email = $_GET["email"];
 $user = $_GET["user"];
-if (isset($_GET["eMail"])) {
-    $email = $_GET["eMail"];
+if ($user != "" and $email != ""){
+	$file = file("passwd.txt");
+	foreach ($file as $line) {
+		$info = explode(":", $line);
+		if (($user == $info[0] and $email != trim($info[2])) or ($user != $info[0] and $email == trim($info[2]))) {
+			$response = "Either username or email is already used, but they do not match.";
+		}
+		else {
+			$response = $response . "";
+		}
+	}
 }
-else {
-    $email = "m";
+else if ($user == "") {
+	$response = "Please enter a username";
 }
-$file = fopen("passwd.txt", "r");
-while (!feof($file)){
-    $line =  fgets($file);
-    $info = explode(":", $line);
-    if ($user == $info[0]){
-        $response = "x";
-    }
-    else if ($email != "m" && $info[2] == $email) {
-        $response = "y";
-    }
-}
-
-fclose($file);
 
 echo($response);
 
